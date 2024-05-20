@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="cal">
+            <div class="calulator">
+                <h2>Js Simple Calculator</h2>
+                <div class="row">
+                    <input type="text" class="input" id="inputResult">
+
+                </div>
+                <div class="row sum">
+                    <button class="blue" id="number" onclick="setnumber(7)">7</button>
+                    <button class="blue" id="number" onclick="setnumber(8)">8</button>
+                    <button class="blue" id="number" onclick="setnumber(9)">9</button>
+                    <button class="blue" id="number" onclick="del()">Del</button>
+                </div>
+
+                <div class="row sum">
+                    <button class="black"  id="number" onclick="setnumber(6)">6</button>
+                    <button class="black" id="number" onclick="setnumber(5)">5</button>
+                    <button class="black"  id="number" onclick="setnumber(4)">4</button>
+                    <button class="btn1 blue" id="number" onclick="setnumber('*')">x</button>
+                </div>
+
+                <div class="row sum">
+                    <button class="black" id="number" onclick="setnumber(3)">3</button>
+                    <button class="black" id="number" onclick="setnumber(2)">2</button>
+                    <button class="black" id="number" onclick="setnumber(1)">1</button>
+                    <button class="btn1 blue" id="number" onclick="setnumber('/')">/</button>
+                </div>
+
+                <div class="row">
+                    <button  class="btn4 black" onclick="setnumber(0)">0</button>
+                    <button class="black" id="number" onclick="setnumber('+')">+</button>
+                    <button class="blue" id="number" onclick="setnumber('-')">-</button>
+
+                </div>
+
+                <div class="row sum">
+                    <button class="btn2 black" id="number" onclick="clc('')">Clear</button>
+                    <button class="btn2 black" id="number" onclick="getresult()">=</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
